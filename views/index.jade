@@ -1,0 +1,147 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='shortcut icon', href='stylesheets/ico/favicon.png')
+    title MINIMAL - Free Bootstrap 3 Theme
+    // Bootstrap core CSS
+    link(href='stylesheets/css/bootstrap.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='stylesheets/css/main.css',rel='stylesheet')
+    link(rel='stylesheet', href='public/styleheets/font-awesome.min.css')
+    script(src='stylesheets/js/jquery.min.js')
+    script(src='stylesheets/js/modernizr.custom.js')
+    link(href='http://fonts.googleapis.com/css?family=Oswald:400,300,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=EB+Garamond', rel='stylesheet', type='text/css')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='public/styleheets/html5shiv.js')
+      script(src='public/styleheets/respond.min.js')
+  body(data-spy='scroll', data-offset='0', data-target='#theMenu')
+    .align-left(class='width=100% height=100%')
+    .align-left(class='width=100% height=100%')
+    .align-left
+
+    nav#theMenu.menu
+      .menu-wrap
+        h1.logo
+          a(href='index.html#home') Minimal
+        i.icon-remove.menu-close
+        a.smoothScroll(href='#home') Home
+        a.smoothScroll(href='#about') About
+        a.smoothScroll(href='#portfolio') Portfolio
+        a.smoothScroll(href='#contact') Contact
+        a(href='#')
+          i.icon-facebook
+        a(href='#')
+          i.icon-twitter
+        a(href='#')
+          i.icon-dribbble
+        a(href='#')
+          i.icon-envelope
+      // Menu button
+      #menuToggle
+        i.icon-reorder
+    // ========== HEADER SECTION ==========
+    section#home(name='home')
+    #headerwrap
+      .container
+        .logo
+          img(src='/images/img/logo.png')
+        br
+        .row
+          h1 MINIMAL THEME
+          br
+          h3 Hello, I'm Carlos. I love design.
+          br
+          br
+          .col-lg-6.col-lg-offset-3
+      // /container
+    // /headerwrap
+    // ========== ABOUT SECTION ==========
+    section#about(name='about')
+    #f
+      .container
+        .row
+          h3 ABOUT ME
+          p.centered
+            i.icon.icon-circle
+            i.icon.icon-circle
+            i.icon.icon-circle
+          // INTRO INFORMATIO
+          .col-lg-6.col-lg-offset-3
+            p
+              | A full time theme crafter based in Madrid, Spain. I love designing beautiful, clean and user-friendly interfaces for websites.
+            p My passion is turning good ideas and products into eye-catching sites.
+            p
+              | Sometimes I blog about design and web trends. Also I share links and my thoughts on
+              a(href='http://twitter.com/BlackTie_co') Twitter
+              | . Need a free handsome bootstrap theme?
+              a(href='http://blacktie.co') Done!
+            p I'm available for freelance jobs. Contact me now.
+            p
+              button.btn.btn-warning(type='button') I HAVE A FREELANCE JOB
+      // /container
+    // /f
+    // ========== CAROUSEL SECTION ==========
+    section#portfolio(name='portfolio')
+    #f
+      .container
+        .row.centered
+          h3 SOME PROJECTS
+          p.centered
+            i.icon.icon-circle
+            i.icon.icon-circle
+            i.icon.icon-circle
+          .col-lg-6.col-lg-offset-3
+            #carousel-example-generic.carousel.slide(data-ride='carousel')
+              // Wrapper for slides
+              .carousel-inner
+                .item.active.centered
+                  img.img-responsive(src='/images/c1.png', alt='')
+                .item.centered
+                  img.img-responsive(src='/images/c2.png', alt='')
+                .item.centered
+                  img.img-responsive(src='/images/c3.png', alt='')
+              br
+              br
+              ol.carousel-indicators
+                li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                li(data-target='#carousel-example-generic', data-slide-to='1')
+                li(data-target='#carousel-example-generic', data-slide-to='2')
+          // col-lg-8
+        // row
+      // container
+    // f
+    // ========== CONTACT SECTION ==========
+    section#contact(name='contact')
+    #f
+      .container
+        .row
+          h3 CONTACT ME
+          p.centered
+            i.icon.icon-circle
+            i.icon.icon-circle
+            i.icon.icon-circle
+          .col-lg-6.col-lg-offset-3
+            p
+              | Some Avenue, 987
+              br
+              | Madrid, Spain
+              br
+              | +34 8984-4343
+            p iam@awesomemail.com
+            p
+              button.btn.btn-warning(type='button') YEAH! CONTACT ME NOW!
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='/styleheets/classie.js')
+    script(src='/styleheets/bootstrap.min.js')
+    script(src='/styleheets/smoothscroll.js')
+    script(src='/styleheets/main.js')
+
